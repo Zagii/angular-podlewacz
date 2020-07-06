@@ -4,10 +4,10 @@
 
     <div
       cdkDropList
-      [cdkDropListData]="done"
+      [cdkDropListData]="narzedzia"
       class="example-list"
-    >
-      <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+  >
+      <div class="example-box" *ngFor="let item of narzedzia" cdkDrag>{{item}}</div>
     </div>
   </div>
   <div class="example-container">
@@ -15,10 +15,10 @@
 
     <div
       cdkDropList
-      [cdkDropListData]="todo"
+      [cdkDropListData]="sekwencja"
       class="example-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+      <div class="example-box" *ngFor="let item of sekwencja" cdkDrag>{{item}}</div>
     </div>
   </div>
 
